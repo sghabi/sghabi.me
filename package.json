@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
+    "react-desktop": "^0.3.9",
     "react-dom": "^16.8.6",
+    "react-draggable": "^3.3.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {

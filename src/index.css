@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: url("./ressources/img/wallpaper.jpg");
+  background-size: cover;
 }
 
 code {
