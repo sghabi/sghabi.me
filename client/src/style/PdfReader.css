@@ -1,0 +1,9 @@
+.react-pdf__Document {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+}
+.react-pdf__Page {
+  position: relative;
+}
