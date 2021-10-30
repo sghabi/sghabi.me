@@ -25,10 +25,15 @@ class Desktop extends Component {
     this.setState({ files: res.files });
   }
 
+  terminalStyle = {
+    height: window.innerHeight / 2,
+    width: window.innerWidth / 2,
+  }
+
   render() {
     return (
       <>
-        <Window background="#000" name="Terminal">
+        <Window background="#000" name="Terminal" {...this.terminalStyle} >
           <TypingText speed="50" text={WelcomeMessage} color="#56CE06" />
         </Window>
         {this.state.files.map(file => {
