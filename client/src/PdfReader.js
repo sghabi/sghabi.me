@@ -38,7 +38,6 @@ class PdfReader extends Component {
    */
   paginate() {
     let pages = [];
-    console.log(this.state.numPages);
     for (let i = 1; i <= this.state.numPages; i++) {
       pages.push(<Page pageNumber={i} />);
     }

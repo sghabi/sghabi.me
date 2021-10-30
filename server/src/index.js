@@ -10,7 +10,6 @@ app.use(express.static("files"));
 app.get("/filesMeta", async function(req, res) {
   try {
     var files = fs.readdirSync("files");
-    console.log(files);
     let result = [];
     files.forEach(file => {
       let p = file.split(".");

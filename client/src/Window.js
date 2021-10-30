@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Window, TitleBar } from "react-desktop/macOs";
-import Draggable from "react-draggable";
+import Draggable from "./Draggable";
 
 // Default style for window
 const windowStyle = {
@@ -34,12 +34,13 @@ class MyWindow extends Component {
 
   render() {
     // Set style
-    const height = window.innerHeight / 2;
-    const width = window.innerWidth / 2.5;
+    const height = this.props.height;
+    const width = this.props.width;
+
     const style = {
       ...windowStyle,
-      left: (window.innerWidth - width) / 2 + "px",
-      top: (window.innerHeight - height) / 2 + "px"
+      left: window.innerWidth/4 ,
+      top: window.innerHeight/4
     };
 
     return (
